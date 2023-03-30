@@ -1,9 +1,11 @@
 import { Col, Divider, Row } from "antd";
 import Bucket from "./Bucket";
-import { useState } from "react";
+import { useContext } from "react";
+import { BucketContext } from "../contexts/bucketContext.jsx";
 
-function BucketGrid({ buckets, setBuckets }) {
-  return (
+function BucketGrid() {
+  const { buckets } = useContext(BucketContext);
+  return buckets ? (
     <div
       style={{
         padding: "50px 50px",
@@ -17,6 +19,8 @@ function BucketGrid({ buckets, setBuckets }) {
         {buckets.map((bucket) => (
           <Col span={6}>
             <Bucket
+              key={bucket.bucketId}
+              bucketId={bucket.bucketId}
               title={bucket.title}
               thumbnail={bucket.thumbnail}
               noOfVideos={bucket.noOfVideos}
@@ -25,6 +29,10 @@ function BucketGrid({ buckets, setBuckets }) {
         ))}
       </Row>
       <Divider width={"100%"} />
+    </div>
+  ) : (
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <h1>No buckets found</h1>
     </div>
   );
 }
