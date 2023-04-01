@@ -39,7 +39,7 @@ function App() {
             color: "white",
           }}
         >
-          Convin Assignmenmt
+          MY Video Buckets
         </Title>
       </Header>
       <Content style={contentStyle}>
