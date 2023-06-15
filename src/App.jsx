@@ -1,11 +1,10 @@
-import { Button, Layout, Modal, Input, Select } from "antd";
+import { Layout } from "antd";
 import { Typography } from "antd";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { BucketContext } from "./contexts/bucketContext";
 import BucketGrid from "./components/BucketGrid";
 import VideoGrid from "./components/VideoGrid";
 import { AddBucket } from "./components/AddBucket";
-import { useState } from "react";
 import { AddVideo } from "./components/AddVideo";
 
 const { Header, Footer, Content } = Layout;

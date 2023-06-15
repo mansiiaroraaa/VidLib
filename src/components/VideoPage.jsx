@@ -41,7 +41,7 @@ function VideoPage() {
             color: "white",
           }}
         >
-          Convin Assignmenmt
+          VidLib
         </Title>
       </Header>
       <Content style={contentStyle}>
