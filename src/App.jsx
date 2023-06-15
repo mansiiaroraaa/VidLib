@@ -38,7 +38,7 @@ function App() {
             color: "white",
           }}
         >
-          MY Video Buckets
+          VidLib
         </Title>
       </Header>
       <Content style={contentStyle}>

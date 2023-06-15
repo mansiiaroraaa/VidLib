@@ -15,9 +15,14 @@ function BucketGrid() {
         justifyContent: "center",
       }}
     >
-      <Row gutter={[16, 16]} justify={"center"} width={"100%"}>
+      <Row gutter={[32, 32]} justify={"center"} width={"100%"}>
         {buckets.map((bucket) => (
-          <Col span={6}>
+          <Col 
+            xs={{ span: 24 }}
+            sm={{ span: 12 }}
+            md={{ span: 8 }}
+            lg={{ span: 6 }}
+            >
             <Bucket
               key={bucket.bucketId}
               bucketId={bucket.bucketId}

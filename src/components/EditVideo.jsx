@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Modal, Input, Select, Button } from "antd";
+import React, { useState, useContext } from "react";
+import { Modal, Input, Select } from "antd";
 import { BucketContext } from "../contexts/bucketContext";
 import { EditOutlined } from "@ant-design/icons";
 

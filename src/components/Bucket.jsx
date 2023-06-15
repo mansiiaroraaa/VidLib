@@ -11,7 +11,10 @@ function Bucket({ title, thumbnail, noOfVideos, bucketId }) {
   return (
     <Card
       hoverable
-      style={{ width: 240 }}
+      style={{ 
+        width: "100%",
+        maxWidth: "300px",
+       }}
       size="small"
       actions={[
         <Link to={`/bucket/${bucketId}`}>

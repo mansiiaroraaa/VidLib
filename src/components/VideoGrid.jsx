@@ -14,7 +14,14 @@ function VideoGrid({ videos }) {
     >
       <Row gutter={[16, 16]} justify={"center"} width={"100%"}>
         {videos.map((video) => (
-          <Col span={6} key={video.title}>
+          <Col key={video.title}
+            xs={{ span: 24 }}
+            sm={{ span: 12 }}
+            md={{ span: 8 }}
+            lg={{ span: 6 }}
+            xl={{ span: 4 }}
+
+          >
             <VideoCard
               title={video.title}
               thumbnail={video.thumbnail}
